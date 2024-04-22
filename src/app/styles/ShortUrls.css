@@ -1,0 +1,73 @@
+.table-container {
+    margin: 20px;
+    overflow-x: auto; /* Enables horizontal scrolling for small screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse borders */
+    margin: 0 0 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); /* subtle shadow to lift the table off the page */
+}
+
+th,
+td {
+    padding: 10px 15px; /* Add spacing within cells */
+    text-align: left; /* Align text to the left */
+}
+
+thead th {
+    background-color: #009879; /* Dark green background for the header */
+    color: #ffffff; /* White text color */
+    text-transform: uppercase; /* Uppercase text for headers */
+    letter-spacing: 0.1em; /* Spacing between header letters */
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd; /* Separator for rows */
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879; /* Add a darker border for the last row to signify end of the table */
+}
+
+tbody tr.active-row {
+    font-weight: bold; /* Make an active row bold, add a class to a tr in the body to activate */
+    color: #009879;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+img{
+    width: 40px;
+    padding: 20px;
+}
+button{
+    margin: 10px;
+}
+
+ul{
+    margin: 20px;
+}
+
+li{
+    font-size: 20px;
+}
